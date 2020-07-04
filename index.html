@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <title>Parshant Tyagi- Assignment 4</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Parshant Taygi">
+        <meta name="description" content="Pizza Shop And Student">
+        <meta name="keywords" content="Pizza, Shop, Toppings, Student, Information, Info">
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <link rel="shortcut icon" type="image.png" href="./img/icon.png" />
+    </head>
+        <body>
+            <header> 
+                <h1>Pizza shop and Student Information</h1>
+            </header>
+         <section>
+            <!-- here pizza shop form begin..-->
+            <div id="Pizza">
+                <h3>Pizza Shop in Town</h3>
+                <form action="#" style="background-color: yellowgreen;">
+                    <table border="1">
+                        <tr>
+                            <th colspan="2">Pizza Shop 2.0</th>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name" size="35" required/></td>
+                        </tr> 
+                        <tr>
+                            <td>Pizza Topping</td>
+                            <td>
+                                <input type="radio" name="topping" value="Supreme" required/>Supreme<br>
+                                <input type="radio" name="topping" value="Vegetarian" required/>Vegetarian</br>
+                                <input type="radio" name="topping" value="Hawaiian" required/>Hawaiian<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pizza Sauce</td>
+                            <td>
+                                <select name="sauce">
+                                    <option value="Tomato sauce">Tomato sauce</option>
+                                    <option value="Garlic sauce">Garlic sauce</option>
+                                    <option value="chilli sauce">chilli sauce</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Optional Extras</td>
+                            <td>
+                                <input type="checkbox" name="extra cheese" value="Extra cheese">Extra Cheese<br>
+                                <input type="checkbox" name="gluten free base" value="Gluten Free Base">Gluten Free Base<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Delivery Instruction<br>
+                                <textarea name="delivery" rows="4" cols="80"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Place order"><br>
+                            </td> 
+                        </tr>
+                   </table>
+                </form>
+            </div>
+            <!-- here pizza shop form end -->
+
+            <!-- Here student form begin -->
+                <div id="Student">
+                    <h3>Student information</h3>
+                    <form action="#">
+                        <fieldset>
+                            <legend><b>Student Information</b></legend>
+                            <table border="1" style="width: 100%;">
+                                <tr>
+                                    <td> First Name:</td>
+                                    <td><input type="text" name="fname" placeholder="Enter fname.." minlength="3" maxlength="50" value="Parshant" required/></td><br>
+                            
+                                </tr>
+                                <tr>
+                                    <td>Last Name:</td>
+                                    <td><input type="text" name="lname" placeholder="Enter lname.." minlength="3" maxlength="20" value="Taygi" required/></td><br>
+                                </tr>
+                                    <td>Gender:</td>
+                                    <td>
+                                        <input type="radio" name="gender" value="Male">Male<br>
+                                        <input type="radio" name="gender" value="Female">Female<br>
+                                        <input type="radio" name="gender" value="Others">Others<br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Password:</td>
+                                    <td><input type="password" name="password" placeholder="Enter Password" maxlength="8" required/></td>
+                                </tr>
+                                <tr>
+                                    <td>Facebook Profile:</td>
+                                    <td><input type="url" name="facebook profile" placeholder="http://www.facebook.com" required/></td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile Number:</td>
+                                    <td><input type="tel" name="phone" placeholder="9999-888-777" pattern="[9]{4}-[0-9]{3}-[0-9]{3}" maxlength="12"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="student2">
+                    <form action="#">
+                        <fieldset>
+                            <table border="1" style="width:100%;">
+                                <tr>
+                                    <td>Date of Birth:</td>
+                                    <td><input type="DOB" name="DOB" placeholder="dd-mm-yyyy" min="1990-01-01" size="45"  required/></td>
+                                </tr>
+                                <tr>
+                                    <td>Class</td>
+                                    <td>
+                                        <select name="class">
+                                            <option value="MCA">MCA</option>
+                                            <option value="BCA">BCA</option>
+                                            <option value="BBA">BBA</option>
+                                            <option value="MBA">MBA</option>
+                                        </select>
+                                    </td>
+                                    <tr>
+                                        <td>Subject Marks:</td>
+                                        <td>
+                                            <label for="Programming in JAVA">Programming in JAVA</label>
+                                            <div class="marks">
+                                                <input type="number" min="0" max="100" value="50" required />
+                                            </div><br>
+                                            <label for="Computer Graphics">Computer Graphics</label>
+                                            <div class="marks">
+                                                <input type="number" min="0" max="100" value="50" required />
+                                            </div><br>
+                                            <label for="DAA">DDA</label>
+                                            <div class="marks"><input type="number" min="0" max="100" value="50" required />
+                                            </div><br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>College Join Date:</td>
+                                        <td><input type="date" name="date" placeholder="dd-mm-yyyy" required/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Habbits:</td>
+                                        <td>
+                                            <input type="checkbox" name="Habbits" value="Watching TV">Watching TV<br>
+                                            <input type="checkbox" name="Habbits" value="Playing PUBG">Playing PUBG<br>
+                                            <input type="checkbox" name="Habbits" value="Listing Music">Listing Music<br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Address:<br>
+                                            <textarea name="Address" rows="4" cols="77" placeholder="Enter the address" maxlength="100" required/></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td><input type="email" name="email" placeholder="abc@gmail.com" required/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Images:</td>
+                                        <td><input type="file" name="image" placeholder="Images" required/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>DMC's :</td>
+                                        <td><input type="file" name="dmc's" multiple required/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="submit" value="Add Student"  formaction="addstudent.php"/></td>
+                                        <td><input type="submit" value="Update Student" formaction="updatestudent.php"/>
+                                        <div id="reset"><input type="reset" value="Reset" /></div></td>
+                                    </tr>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </form>
+                </div>
+                <!--here student form end -->
+                <div id="clear"></div>
+         </div>
+      </section>
+
+      <!-- Here footer begins -->
+      <footer>
+         <p>All right reserved</p>
+      </footer>
+      <!-- Footer ends.. -->
+
+
+         
+           
+            
+            
+    </body>
+</html>
